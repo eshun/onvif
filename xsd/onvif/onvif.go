@@ -357,10 +357,10 @@ type Profile struct {
 
 type VideoSourceConfiguration struct {
 	ConfigurationEntity
-	ViewMode    string                            `xml:"ViewMode,attr"`
-	SourceToken ReferenceToken                    `xml:"onvif:SourceToken"`
-	Bounds      IntRectangle                      `xml:"onvif:Bounds"`
-	Extension   VideoSourceConfigurationExtension `xml:"onvif:Extension"`
+	ViewMode    string `xml:"ViewMode,attr"`
+	SourceToken ReferenceToken
+	Bounds      IntRectangle
+	Extension   VideoSourceConfigurationExtension
 }
 
 type ConfigurationEntity struct {
