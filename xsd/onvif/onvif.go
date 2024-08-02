@@ -130,8 +130,8 @@ type VideoSource struct {
 }
 
 type VideoResolution struct {
-	Width  xsd.Int `xml:"onvif:Width"`
-	Height xsd.Int `xml:"onvif:Height"`
+	Width  xsd.Int
+	Height xsd.Int
 }
 
 type ImagingSettings struct {
@@ -421,8 +421,8 @@ type AudioSourceConfiguration struct {
 
 type VideoEncoderConfiguration struct {
 	ConfigurationEntity
-	Encoding       VideoEncoding          `xml:"onvif:Encoding"`
-	Resolution     VideoResolution        `xml:"onvif:Resolution"`
+	Encoding       VideoEncoding `xml:"onvif:Encoding"`
+	Resolution     VideoResolution
 	Quality        float64                `xml:"onvif:Quality"`
 	RateControl    VideoRateControl       `xml:"onvif:RateControl"`
 	MPEG4          Mpeg4Configuration     `xml:"onvif:MPEG4"`
